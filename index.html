@@ -858,6 +858,7 @@ a { color: inherit; }
 .site { overflow-x: clip; }
 .registry { padding-top: clamp(40px, 9vw, 70px); }
 .registry .sprigs--center { margin: 14px auto 22px; }
+.gift-icon { display: block; width: clamp(46px, 12vw, 58px); height: auto; margin: 0 auto 18px; filter: drop-shadow(0 2px 6px rgba(0, 0, 0, .35)); }
 .registry__note {
   max-width: 30em;
   margin: 0 auto 30px;
@@ -1208,7 +1209,16 @@ a { color: inherit; }
 
     <!-- 4 · GIFT REGISTRY -->
     <section class="section registry" id="registry" aria-labelledby="reg-title">
-      <h2 class="section-title section-title--spaced reveal" id="reg-title">Registry</h2>
+      <svg class="gift-icon reveal" viewBox="0 0 64 64" aria-hidden="true">
+        <g fill="none" stroke="url(#goldGrad)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="10" y="26" width="44" height="30" rx="1.5"/>
+          <rect x="7" y="18" width="50" height="9" rx="1.5"/>
+          <path d="M32 18v38"/>
+          <path d="M32 18c-3-7-14-11-16-5-1.8 5.4 9.5 5.6 16 5"/>
+          <path d="M32 18c3-7 14-11 16-5 1.8 5.4-9.5 5.6-16 5"/>
+        </g>
+      </svg>
+      <h2 class="section-title section-title--spaced reveal" id="reg-title">Gift Registry</h2>
       <svg class="sprigs sprigs--center reveal" viewBox="0 0 250 24" aria-hidden="true"><use href="#sprig" x="0" width="120" height="24"/><use href="#sprig" width="120" height="24" transform="translate(250 0) scale(-1 1)"/></svg>
       <p class="registry__note reveal">Your presence is the greatest gift of all. Should you wish to honor us with a gift, we have created a registry for your convenience.</p>
       <a class="btn btn--gold reveal" id="registryBtn" href="https://www.amazon.com/wedding/share/jpandcarol" target="_blank" rel="noopener">
